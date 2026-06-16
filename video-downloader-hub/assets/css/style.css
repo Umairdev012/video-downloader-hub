@@ -1,0 +1,254 @@
+/* ====================================
+   GLOBAL RESET
+==================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* ====================================
+   CONTAINER
+==================================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ====================================
+   HEADER
+==================================== */
+
+.header {
+    background: #111827;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+}
+
+.logo h2 {
+    color: #ff0000;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* ====================================
+   HERO SECTION
+==================================== */
+
+.hero {
+    padding: 80px 0 60px;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero-content h1 {
+    font-size: 54px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    color: #cbd5e1;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* ====================================
+   URL BOX
+==================================== */
+
+.url-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.url-box input {
+    width: 100%;
+    max-width: 700px;
+    height: 60px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: #1e293b;
+    color: white;
+    border-radius: 12px;
+    padding: 0 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.url-box input::placeholder {
+    color: #94a3b8;
+}
+
+.url-box button {
+    height: 60px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 12px;
+    background: #ff0000;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.url-box button:hover {
+    transform: translateY(-2px);
+    background: #d60000;
+}
+
+/* ====================================
+   VIDEO SECTION
+==================================== */
+
+.video-section {
+    padding-bottom: 80px;
+}
+
+.video-card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background: #111827;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 25px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.thumbnail-wrapper {
+    flex: 1;
+}
+
+.thumbnail-wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.video-info {
+    flex: 1;
+}
+
+.video-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.video-info p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* ====================================
+   DOWNLOAD BUTTONS
+==================================== */
+
+.download-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.download-btn {
+    border: none;
+    cursor: pointer;
+    padding: 14px 22px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+}
+
+.download-btn.audio {
+    background: #16a34a;
+}
+
+/* ====================================
+   LOADER
+==================================== */
+
+.loader {
+    position: fixed;
+    inset: 0;
+    background: rgba(15,23,42,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+    z-index: 99999;
+}
+
+/* ====================================
+   ERROR BOX
+==================================== */
+
+.error-box {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #dc2626;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    z-index: 9999;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* ====================================
+   FOOTER
+==================================== */
+
+.footer {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* ====================================
+   UTILITIES
+==================================== */
+
+.hidden {
+    display: none !important;
+}

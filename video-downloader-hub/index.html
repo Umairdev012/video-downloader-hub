@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YouTube Video Downloader</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>YouTube Downloader</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+
+            <div class="hero-content">
+
+                <h1>Download YouTube Videos Instantly</h1>
+
+                <p>
+                    Paste any YouTube video URL below and get video details,
+                    thumbnail and available download formats.
+                </p>
+
+                <div class="url-box">
+
+                    <input
+                        type="text"
+                        id="videoUrl"
+                        placeholder="Paste YouTube Video URL Here">
+
+                    <button id="fetchBtn">
+                        Get Video
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Video Card -->
+    <section class="video-section">
+
+        <div class="container">
+
+            <div
+                id="videoCard"
+                class="video-card hidden">
+
+                <div class="thumbnail-wrapper">
+
+                    <img
+                        id="thumbnail"
+                        src=""
+                        alt="Video Thumbnail">
+
+                </div>
+
+                <div class="video-info">
+
+                    <h2 id="videoTitle">
+                        Video Title
+                    </h2>
+
+                    <p id="channelName">
+                        Channel Name
+                    </p>
+
+                    <div class="download-options">
+
+                        <button class="download-btn">
+                            MP4 360P
+                        </button>
+
+                        <button class="download-btn">
+                            MP4 720P
+                        </button>
+
+                        <button class="download-btn">
+                            MP4 1080P
+                        </button>
+
+                        <button class="download-btn audio">
+                            MP3 AUDIO
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Loader -->
+    <div id="loader" class="loader hidden">
+        Loading...
+    </div>
+
+    <!-- Error Message -->
+    <div id="errorBox" class="error-box hidden"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 YouTube Video Downloader
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/downloader.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
